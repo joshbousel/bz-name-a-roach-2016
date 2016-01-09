@@ -1,0 +1,172 @@
+.badges {
+	border-top: 1px solid #ebebeb;
+	margin: 50px 0 0;
+	padding: 35px 0 0;
+	text-align: center;
+}
+
+.badge,.badge img {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: top
+}
+
+.badge img {
+	margin: 0 15px 0 0
+}
+
+div.donation-level-container, 
+div.responsive div.form-content, 
+div.donation-level-input-container, 
+div.generic-repeat-label-checkbox-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+div.donation-form-container.responsive {
+    background: transparent;
+    border: none;
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 0;
+	width: 100%;
+}
+
+div.html-caption-container {
+	max-width: none;
+}
+
+div.responsive input[type="text"], 
+div.responsive input[type="number"], 
+div.responsive input[type="password"], 
+div.responsive textarea, 
+div.responsive select {
+    background: #f7fbf7;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #BDB9B3;
+    color: @black;
+    font-family: @font-lato;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 6px 8px 6px 16px;
+    
+    @media all and (max-width:@break-tablet) { 
+		display: block;
+		width: calc(~'100% - 14px') !important;
+	}
+}
+
+div.responsive select {
+    height: 31px;
+    
+    @media all and (max-width:@break-tablet) { 
+		width: 102% !important;
+	}
+}
+
+div.responsive a:visited, div.responsive a:link {
+	color: #008484;
+}
+
+form, form span, form p, form div {
+	color: @black;
+	font-family: @font-lato;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.form-row {
+	margin: 10px 0 !important;
+}
+
+.responsive #level_standard_row .form-content .field-required, .responsive #level_standard_row .form-content .FormLabelText, .responsive #level_standard_row .form-content .donation-level-general-ask, .responsive #level_standard_row .form-content .donation-levels, .responsive .form-row .form-content .field-required, .responsive .form-row .form-content label, .responsive .form-row .form-content input, .responsive .form-row .form-content select, .responsive input[type="checkbox"], .responsive fieldset, .responsive .date-input-container, .responsive textarea {
+    display: inline-block!important;
+    vertical-align: text-top!important;
+}
+
+.responsive textarea {
+	width: 400px;
+	height: 100px;
+}
+
+.responsive .form-row .form-content label {
+    width: 11.75em;
+}
+
+.roach-donation-indent {
+	margin: 0 0 0 16em;
+	
+	@media all and (max-width:@break-tablet) { 
+		margin: 0;
+	}
+}
+
+label.FormLabel {
+	min-width: 0;
+}
+
+.responsive .form-row .form-content .field-required + label {
+    width: 11em;
+}
+
+div.responsive div.form-content .HelpLink {
+    position: absolute;
+    width: 100%;
+    bottom: -28px;
+   
+    @media all and (max-width:@break-tablet) { 
+		left: 0;
+	}
+}
+
+.don-standard-levels,
+#select_grid_row,
+#payment_typecc_type_row legend,
+.responsive .form-row .form-content label[for="payment_typecc_exp_date_YEAR"] {
+	display: none !important;
+}
+
+div.responsive button.step-button {
+	background: @dark-red;
+	border: none;
+	color: #fff;
+	font-family: @font-brandon;
+	font-weight: bold;
+	font-size: .9rem;
+	letter-spacing: 2px;
+	max-width: none;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	transition: @default-transition;
+	width: auto;
+	-webkit-font-smoothing: antialiased;
+	
+	&:hover {
+		background: #b52741;
+	}
+}
+
+#pstep_finish,
+#nullbtn {
+	float: none;
+	margin: 0px 0 0 13.5em;
+	
+	@media all and (max-width:@break-tablet) { 
+		margin: 0;
+	}
+}
+
+div.button-container {
+	border: none;
+}
+
+div.transaction-summary-entry {
+	background: transparent;
+	border-top: 1px solid #ebebeb;
+	font-size: .875rem;
+	padding: 15px;
+}
