@@ -1,0 +1,37 @@
+.roach-footer {
+	background-color: #212426;
+	padding: 35px 0;
+	text-align: center;
+	width: 100%;
+	
+	&--link {
+		color: #008484 !important;
+		display: inline-block;
+		font-family: @font-lato;
+		font-size: .875rem;
+		line-height: .875rem;
+		margin: 15px 10px 0;
+		text-decoration: none;
+		
+		&:after {
+			content: '';
+			display: block;
+			border-bottom: 1px solid #008484;
+			margin: 10px auto 0;
+			transition: width 0.2s ease-out;
+			width: 0;
+		}
+		
+		&:hover:after {
+			width: 35px;
+		}
+	}
+	
+	&--text {
+		color: #706c65;
+		font-size: .875rem;
+		line-height: 1rem;
+		text-align: center;
+		margin: 0 auto 10px;
+	}
+}
