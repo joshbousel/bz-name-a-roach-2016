@@ -44,15 +44,22 @@ div.responsive input[type="number"],
 div.responsive input[type="password"], 
 div.responsive textarea, 
 div.responsive select {
-    background: #f7fbf7;
-    border: 0;
+    background: #FFFDFD;
+    border: 1px solid #D2BCC0;
     border-radius: 4px;
-    box-shadow: inset 0 0 0 1px #BDB9B3;
+    box-shadow: none;
     color: @black;
     font-family: @font-lato;
     font-size: 1rem;
     line-height: 1rem;
     padding: 6px 8px 6px 16px;
+    transition: @default-transition;
+    
+    &:focus {
+	    border: 1px solid @dark-red;
+		box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
+		outline: none;
+    }
     
     @media all and (max-width:@break-tablet) { 
 		display: block;
@@ -61,7 +68,12 @@ div.responsive select {
 }
 
 div.responsive select {
+	background: url('@{image-path}icon-select-arrows.png') no-repeat;
+	background-position: calc(~'100% - 6px') center;
     height: 31px;
+    padding: 6px 30px 6px 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     
     @media all and (max-width:@break-tablet) { 
 		width: 102% !important;
@@ -130,16 +142,19 @@ div.responsive div.form-content .HelpLink {
 	display: none !important;
 }
 
-div.responsive button.step-button {
+div.responsive button.step-button,
+.roach-button {
 	background: @dark-red;
 	border: none;
-	color: #fff;
+	border-radius: 4px;
+	color: #fff !important;
 	font-family: @font-brandon;
 	font-weight: bold;
 	font-size: .9rem;
 	letter-spacing: 2px;
 	max-width: none;
 	padding: 8px 20px;
+	text-decoration: none;
 	text-transform: uppercase;
 	transition: @default-transition;
 	width: auto;
@@ -147,6 +162,21 @@ div.responsive button.step-button {
 	
 	&:hover {
 		background: #b52741;
+	}
+	
+	@media all and (max-width:@break-tablet) { 
+		width: 102%;
+	}
+}
+
+.roach-button__facebook {
+	background: url('@{image-path}icon-facebook.png') no-repeat @dark-red;
+	background-position: 18px 9px;
+    padding: 8px 20px 8px 40px;
+    
+    &:hover {
+		background: url('@{image-path}icon-facebook.png') no-repeat #b52741;
+		background-position: 18px 9px;
 	}
 }
 

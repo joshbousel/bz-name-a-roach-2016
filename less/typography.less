@@ -2,8 +2,8 @@
 	color: @dark-red;
 	font-family: @font-vibes;
 	font-size: 4.5rem;
-	line-height: 5.5rem;
-	margin: 0 0 25px;
+	line-height: 5.25rem;
+	margin: 0 0 50px;
 	transition: @default-transition;
 	text-align: center;
 	
@@ -12,9 +12,34 @@
 		line-height: 4rem;
 	}
 	
-	@media all and (max-width:@break-tablet) { 
+	@media all and (max-width:@break-mobile) { 
 		font-size: 2.5rem;
 		line-height: 3.5rem;
+	}
+}
+
+.roach-page-header__no-margin {
+	margin: 0;
+}
+
+.roach-price {
+	color: @black;
+	font-family: @font-brandon;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	font-weight: normal;
+	margin: 0 0 25px;
+	text-align: center;
+	transition: @default-transition;
+	
+	@media all and (max-width:@break-tablet) { 
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	
+	@media all and (max-width:@break-mobile) { 
+		font-size: 1.5rem;
+		line-height: 1.5rem;
 	}
 }
 
