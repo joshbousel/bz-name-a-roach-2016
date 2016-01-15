@@ -18,3 +18,21 @@ body, html {
 .roach-content {
 	padding: 30px 0;
 }
+
+.roach-product-image {
+	float: right;
+    height: auto;
+    margin: 0 0 0 35px;
+    width: 250px;
+    
+    @media all and (max-width:@break-tablet) { 
+		width: 200px;
+	}
+	
+	@media all and (max-width:@break-mobile) { 
+		display: block;
+		float: none;
+		margin: 0 auto 25px;
+		width: 75%;
+	}
+}
