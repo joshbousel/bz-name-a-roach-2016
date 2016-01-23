@@ -28,7 +28,20 @@
 											<td style="font-size: 0px;"><img src="http://e.wcs.org/name-a-roach-2016/stationery/images/roach-certificate-in-your-honor.gif" alt="In Your Honor" width="534" height="25" /></td>
 										</tr>
 										<tr>
-											<td style="font-size: 27px; font-family: helvetica, arial, sans-serif; color: #a32032; text-align: center;" align="center">[[S120:dc:jointDonorFirstName]]</td>
+											<td style="font-size: 27px; font-family: helvetica, arial, sans-serif; color: #a32032; text-align: center;" align="center"><convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:op><convio:session name="120" param="dc:firstName"></convio:session></convio:op>
+    <convio:then><convio:session name="120" param="dc:firstName"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Empty">**Your Name**</convio:otherwise>
+</convio:choose>
+<convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:op><convio:session name="120" param="dc:lastName"></convio:session></convio:op>
+    <convio:then><convio:session name="120" param="dc:lastName"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Empty"></convio:otherwise>
+</convio:choose></td>
 										</tr>
 										<tr>
 											<td style="font-size: 0px;"><img src="http://e.wcs.org/name-a-roach-2016/stationery/images/roach-certificate-has-named-a-roach.gif" alt="Has Named a Roach" width="534" height="57" /></td>
