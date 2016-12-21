@@ -45,7 +45,7 @@ div.responsive input[type="password"],
 div.responsive textarea, 
 div.responsive select {
     background: #FFFDFD;
-    border: 1px solid #D2BCC0;
+    border: 1px solid #c196aa;
     border-radius: 4px;
     box-shadow: none;
     color: @black;
@@ -66,6 +66,18 @@ div.responsive select {
 		width: calc(~'100% - 14px') !important;
 	}
 }
+
+div.responsive #ecard_send_date_MONTH,
+div.responsive #ecard_send_date_DAY,
+div.responsive #ecard_send_date_YEAR,
+div.responsive #payment_typecc_exp_date_MONTH,
+div.responsive #payment_typecc_exp_date_YEAR {
+	@media all and (max-width:@break-tablet) { 
+		display: inline !important;
+		width: auto !important;
+	}
+}
+
 
 div.responsive select {
 	background: url('@{image-path}icon-select-arrows.png') no-repeat;
@@ -138,7 +150,10 @@ div.responsive div.form-content .HelpLink {
 .don-standard-levels,
 #select_grid_row,
 #payment_typecc_type_row legend,
-.responsive .form-row .form-content label[for="payment_typecc_exp_date_YEAR"] {
+.responsive .form-row .form-content label[for="payment_typecc_exp_date_YEAR"],
+.responsive .form-row .form-content label[for="ecard_send_date_YEAR"],
+.responsive .form-row .form-content .date-input-container label[for="ecard_send_date_MONTH"],
+.responsive .form-row .form-content .date-input-container label[for="ecard_send_date_DAY"] {
 	display: none !important;
 }
 
