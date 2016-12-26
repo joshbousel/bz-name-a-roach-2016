@@ -70,6 +70,62 @@
 		}
 	}
 	
+	.roach-ecard-selection {
+		margin: 0 0 25px;
+		
+		&__label {
+			display: inline-block;
+			vertical-align: top;
+			width: 25.5%;
+			
+			@media all and (max-width:@break-tablet) {
+				width: 100%;
+			}
+		}
+		
+		&__preview {
+			display: inline-block;
+			max-width: 609px;
+			vertical-align: top;
+			width: 73.5%;
+			
+			@media all and (max-width:@break-tablet) {
+				max-width: none;
+				width: 100%;
+			}
+			
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+		
+		&__thumbs {
+			margin: 0 0 0 25.5%;
+			
+			@media all and (max-width:@break-tablet) {
+				margin: 0;
+			}
+			
+			&__image {
+				border: 2px solid #fff;
+				cursor: pointer;
+				height: auto;
+				margin: 10px 10px 0 0;
+				transition: @default-transition;
+				width: 175px;
+
+				@media all and (max-width:@break-tablet) {
+					width: calc(~'31% - 10px');
+				}
+				
+				&--selected {
+					border: 2px solid @dark-red;
+				}
+			}
+		}
+	}
+	
 	.Smaller {
 		font-family: @font-lato;
 		font-size: .75rem;
