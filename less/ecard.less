@@ -15,9 +15,9 @@
 	label[for="cons_email_opt_in"],
 	#s_rememberMe,
 	input[type="reset"],
-	tr:nth-of-type(5),
 	tr:nth-of-type(6),
-	.Hint {
+	tr:nth-of-type(7),
+	p.Hint {
 		display: none;
 	}
 	
@@ -32,6 +32,10 @@
 	
 	#ecard_captcha_container {
 		margin: 0 0 25px;
+		
+		@media all and (max-width:@break-tablet) {
+			margin: 0;
+		}
 		
 		a.Smaller {
 			color: @dark-red;
@@ -76,7 +80,7 @@
 		&__label {
 			display: inline-block;
 			vertical-align: top;
-			width: 25.5%;
+			width: 22.5%;
 			
 			@media all and (max-width:@break-tablet) {
 				width: 100%;
@@ -87,11 +91,11 @@
 			display: inline-block;
 			max-width: 609px;
 			vertical-align: top;
-			width: 73.5%;
+			width: 76.5%;
 			
 			@media all and (max-width:@break-tablet) {
 				max-width: none;
-				width: 100%;
+				width: 98%;
 			}
 			
 			img {
@@ -101,7 +105,7 @@
 		}
 		
 		&__thumbs {
-			margin: 0 0 0 25.5%;
+			margin: 0 0 0 23%;
 			
 			@media all and (max-width:@break-tablet) {
 				margin: 0;
@@ -132,6 +136,19 @@
 		margin: 0;
 	}
 	
+	span.Hint {
+	    display: block;
+	    font-size: .75rem;
+	    font-style: normal;
+		line-height: 1.15rem;
+	    margin: -5px 0 25px;
+	    width: 75%;
+	    
+	    @media all and (max-width:@break-tablet) {
+			width: 100%;
+		}
+	} 
+	
 	table table {
 	    max-width: 617px;
 		width: calc(~'100% + 27px');
@@ -139,6 +156,7 @@
 	
 	#taf_send {
 		@media all and (max-width:@break-tablet) {
+			bottom: 0;
 			left: 15px;
 			position: absolute;
 			width: 43%;
@@ -147,6 +165,7 @@
 	
 	#taf_popup_preview {
 		@media all and (max-width:@break-tablet) {
+			bottom: 0;
 			right: 15px;
 			position: absolute;
 			width: 43%;
