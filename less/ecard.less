@@ -1,0 +1,116 @@
+#InputForm {
+	.appArea {
+		width: 100%;
+	}
+	
+	.Button {
+		.roach-button
+	}
+	
+	#cons_email {
+		margin: 10px 0 0;
+	}
+	
+	#cons_email_opt_in,
+	label[for="cons_email_opt_in"],
+	#s_rememberMe,
+	input[type="reset"],
+	tr:nth-of-type(5),
+	tr:nth-of-type(6),
+	.Hint {
+		display: none;
+	}
+	
+	#cons_first_name,
+	#cons_last_name {
+		width: calc(~'100% - 40px');
+		
+		@media all and (max-width:@break-tablet) {
+			width: calc(~'100% - 40px') !important;
+		}
+	}
+	
+	#ecard_captcha_container {
+		margin: 0 0 25px;
+		
+		a.Smaller {
+			color: @dark-red;
+		}
+		
+		#ecard_captcha {
+			width: 80%;
+			
+			@media all and (max-width:@break-tablet) {
+				display: inline-block !important;
+				width: 64% !important;
+			}
+		}
+		
+		td {
+			width: 50% !important;
+		}
+	}
+	
+	input[type="text"], 
+	textarea, 
+	select {
+	    .roach-input;
+		max-width: 577px;
+		width: 100%;
+
+	}
+	
+	h3.ObjTitle {
+		.roach-page-header
+	}
+	
+	p {
+		@media all and (max-width:@break-tablet) {
+			margin: 10px 0 0;
+		}
+	}
+	
+	.Smaller {
+		font-family: @font-lato;
+		font-size: .75rem;
+		margin: 0;
+	}
+	
+	table table {
+	    max-width: 617px;
+		width: calc(~'100% + 27px');
+	}
+	
+	#taf_send {
+		@media all and (max-width:@break-tablet) {
+			left: 15px;
+			position: absolute;
+			width: 43%;
+		}
+	}
+	
+	#taf_popup_preview {
+		@media all and (max-width:@break-tablet) {
+			right: 15px;
+			position: absolute;
+			width: 43%;
+		}
+	}
+	
+	td {
+		vertical-align: top;
+	}
+	
+	td:nth-of-type(2),
+	td:nth-of-type(3) {	
+		@media all and (max-width:@break-tablet) {
+			display: block !important;
+		}
+	}
+	
+	td:nth-of-type(3) {
+		@media all and (max-width:@break-tablet) {
+			width: 94%;
+		}
+	}
+}
