@@ -1,3 +1,23 @@
+.eCards {
+	.Divider {
+		background-color: transparent;
+		margin: 25px 5px;
+	}
+	
+	h3.ObjTitle {
+		.roach-page-header
+	}
+	
+	.nyza.body {
+		border: 1px solid #ccc;
+	}
+	
+	p {
+		margin: 25px 5px;
+		max-width: none;
+	}
+}
+
 #InputForm {
 	.appArea {
 		width: 100%;
@@ -17,6 +37,8 @@
 	input[type="reset"],
 	tr:nth-of-type(6),
 	tr:nth-of-type(7),
+	tr:nth-of-type(7),
+	tr:nth-of-type(9),
 	p.Hint {
 		display: none;
 	}
@@ -114,8 +136,10 @@
 			&__image {
 				border: 2px solid #fff;
 				cursor: pointer;
-				height: auto;
+				display: inline-block;
+				height: 92px;
 				margin: 10px 10px 0 0;
+				position: relative;
 				transition: @default-transition;
 				width: 175px;
 
@@ -123,8 +147,34 @@
 					width: calc(~'31% - 10px');
 				}
 				
+				&::before {
+					background: url('../images/icon-check.png') top left no-repeat;
+				    background-size: cover;
+				    content: "";
+				    height: 0px;
+				    left: 50%;
+				    top: 50%;
+				    opacity: 0;
+				    position: absolute;
+				    transition: @default-transition;
+				    width: 0px;
+				}
+				
 				&--selected {
 					border: 2px solid @dark-red;
+					
+					&::before {
+						height: 60px;
+						left: calc(~'50% - 30px');
+						opacity: 1;
+						top: calc(~'50% - 30px');
+						width: 60px;
+					}
+				}
+				
+				img {
+					height: auto;
+					width: 100%;
 				}
 			}
 		}
@@ -155,6 +205,8 @@
 	}
 	
 	#taf_send {
+		cursor: pointer;
+		
 		@media all and (max-width:@break-tablet) {
 			bottom: 0;
 			left: 15px;
@@ -164,6 +216,8 @@
 	}
 	
 	#taf_popup_preview {
+		cursor: pointer;
+		
 		@media all and (max-width:@break-tablet) {
 			bottom: 0;
 			right: 15px;
