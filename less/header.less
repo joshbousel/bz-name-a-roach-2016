@@ -1,55 +1,58 @@
 .roach-header {
-	background: url('@{image-path}bg-header.jpg') no-repeat;
-	background-size: 100% auto;
+	background-color: #3b1024;
+	height: 100px;
 	position: relative;
+	transition: @default-transition;
+	width: 100%;
+	
+	@media all and (max-width:@break-tablet) { 
+		height: 75px;
+	}	
 	
 	@media all and (max-width:@break-mobile) { 
-		background-position: 0 39px;
+		height: 58px;
 	}
 	
-	&:after {
-	    background-image: -webkit-linear-gradient(rgba(141,15,39,0.5), transparent);
-	    background-image: linear-gradient(rgba(141,15,39,.5), transparent);
-	    content: "";
-	    height: 75px;
-	    left: 0;
-	    position: absolute;
-	    top: 0;
-	    width: 100%;
-	}
-	
-	&:before {
-		content: '';
-		display: block;
-		height: 0;
-		padding-bottom: 17.5%;
-		position: relative;
-		vertical-align: top;
+	&::after {
+		background-image: url('@{image-path}roach.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		content: "";
+		height: 196px;
+		position: absolute;
+		right: 14%;
+		top: -13px;
+		transition: @default-transition;
+		width: 186px;
+		
+		@media all and (max-width:@break-tablet) { 
+			height: 179px;
+			right: 3%;
+			top: -26px;
+			width: 167px;
+		}	
 		
 		@media all and (max-width:@break-mobile) { 
-			padding-bottom: calc(~'17.5% + 39px');
+			height: 156px;
+			right: -3%;
+			width: 148px;
 		}
-	}
+	}	
 }
 
 .roach-header--logo {
-	position: absolute;
-	left: 17%;
-    top: 15px;
+	padding: 29px 0 0;
     transition: @default-transition;
 	width: 250px;
-	z-index: 100;
 	
-	@media all and (max-width:@break-tablet) {
-		left: 3%;
+	@media all and (max-width:@break-tablet) { 
+		padding: 23px 0 0;
 		width: 175px;
 	}
 	
-	@media all and (max-width:@break-mobile) {
-		background: @black;
-		left: 0;
-		top: 0;
-		width: 100%;
+	@media all and (max-width:@break-mobile) { 
+		padding: 18px 0 0;
+		width: 135px;
 	}
 	
 	&--image {
@@ -57,10 +60,5 @@
 		width: 100%;
 		transition: @default-transition;
 		vertical-align: top;
-		
-		@media all and (max-width:@break-mobile) { 
-			margin: 10px;
-			width: 135px;
-		}
 	}
 }

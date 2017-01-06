@@ -1,0 +1,23 @@
+.roach-input {
+	background: #FFFDFD;
+    border: 1px solid #c196aa;
+    border-radius: 4px;
+    box-shadow: none;
+    color: @black;
+    font-family: @font-lato;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 6px 8px 6px 16px;
+    transition: @default-transition;
+    
+    &:focus {
+	    border: 1px solid @dark-red;
+		box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
+		outline: none;
+    }
+    
+    @media all and (max-width:@break-tablet) { 
+		display: block;
+		width: calc(~'100% - 14px') !important;
+	}
+}

@@ -44,28 +44,20 @@ div.responsive input[type="number"],
 div.responsive input[type="password"], 
 div.responsive textarea, 
 div.responsive select {
-    background: #FFFDFD;
-    border: 1px solid #D2BCC0;
-    border-radius: 4px;
-    box-shadow: none;
-    color: @black;
-    font-family: @font-lato;
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 6px 8px 6px 16px;
-    transition: @default-transition;
-    
-    &:focus {
-	    border: 1px solid @dark-red;
-		box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
-		outline: none;
-    }
-    
-    @media all and (max-width:@break-tablet) { 
-		display: block;
-		width: calc(~'100% - 14px') !important;
+    .roach-input
+}
+
+div.responsive #ecard_send_date_MONTH,
+div.responsive #ecard_send_date_DAY,
+div.responsive #ecard_send_date_YEAR,
+div.responsive #payment_typecc_exp_date_MONTH,
+div.responsive #payment_typecc_exp_date_YEAR {
+	@media all and (max-width:@break-tablet) { 
+		display: inline !important;
+		width: auto !important;
 	}
 }
+
 
 div.responsive select {
 	background: url('@{image-path}icon-select-arrows.png') no-repeat;
@@ -138,35 +130,15 @@ div.responsive div.form-content .HelpLink {
 .don-standard-levels,
 #select_grid_row,
 #payment_typecc_type_row legend,
-.responsive .form-row .form-content label[for="payment_typecc_exp_date_YEAR"] {
+.responsive .form-row .form-content label[for="payment_typecc_exp_date_YEAR"],
+.responsive .form-row .form-content label[for="ecard_send_date_YEAR"],
+.responsive .form-row .form-content .date-input-container label[for="ecard_send_date_MONTH"],
+.responsive .form-row .form-content .date-input-container label[for="ecard_send_date_DAY"] {
 	display: none !important;
 }
 
-div.responsive button.step-button,
-.roach-button {
-	background: @dark-red;
-	border: none;
-	border-radius: 4px;
-	color: #fff !important;
-	font-family: @font-brandon;
-	font-weight: bold;
-	font-size: .9rem;
-	letter-spacing: 2px;
-	max-width: none;
-	padding: 8px 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: @default-transition;
-	width: auto;
-	-webkit-font-smoothing: antialiased;
-	
-	&:hover {
-		background: #b52741;
-	}
-	
-	@media all and (max-width:@break-tablet) { 
-		width: 102%;
-	}
+div.responsive button.step-button {
+	.roach-button
 }
 
 label[for="billing_info_same_as_shippingname"] {
