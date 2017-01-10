@@ -137,7 +137,8 @@
 				border: 2px solid #fff;
 				cursor: pointer;
 				display: inline-block;
-				height: 92px;
+				height: auto;
+				line-height: 0;
 				margin: 10px 10px 0 0;
 				position: relative;
 				transition: @default-transition;
@@ -169,6 +170,13 @@
 						opacity: 1;
 						top: calc(~'50% - 30px');
 						width: 60px;
+						
+						@media all and (max-width:@break-tablet) {
+							height: 40px;
+							left: calc(~'50% - 20px');
+							top: calc(~'50% - 20px');
+							width: 40px;
+						}
 					}
 				}
 				
