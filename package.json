@@ -1,0 +1,22 @@
+{
+  "name": "bz-name-a-roach-2016",
+  "version": "1.0.0",
+  "description": "Bronx Zoo's Name a Roach Donation Campaign 2016",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshbousel/bz-name-a-roach-2016.git"
+  },
+  "author": "Joshua Bousel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshbousel/bz-name-a-roach-2016/issues"
+  },
+  "homepage": "https://github.com/joshbousel/bz-name-a-roach-2016#readme",
+  "dependencies": {
+    "jquery": "^1.12.3"
+  }
+}
