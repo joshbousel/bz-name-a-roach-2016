@@ -19,7 +19,7 @@ $(function(){
 		var subsrc = $.urlParam('s_subsrc');
 		
 		url = src != null ? url.replace('s_src=CAMP_Name-a-Roach','s_src='+src) : url;
-		url = subsrc != null ? url.replace('s_subsrc=CAMP_Name-a-Roach','s_src='+subsrc) : url;
+		url = subsrc != null ? url.replace('s_subsrc=CAMP_Name-a-Roach','s_subsrc='+subsrc) : url;
 			
 		anchor.attr('href',url);
 	});
